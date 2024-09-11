@@ -21,12 +21,14 @@ export default function HomeScreen() {
       </ThemedView>
 
       <ThemedView style={styles.btns}>
-      <Pressable>
-        <Text>
-          receba
+      <Pressable style={styles.btn}>
+        <Text style={{fontSize:20, fontWeight: "800" }}>
+          Pesquisa Google
         </Text>
+        </Pressable>
+        <Pressable style={styles.btn}>
         <Text>
-          receba2
+          Estou com sorte
         </Text>
       </Pressable>
       </ThemedView>
@@ -92,11 +94,20 @@ const styles = StyleSheet.create({
 
   btns: {
     marginTop: 30,
-    width: 450,
+    width: 400,
     justifyContent: "space-around",
     flexDirection: "row",
     backgroundColor: "white",    
   },
+
+  btn: {
+    padding: 10,
+    backgroundColor: "#f8f9fa",
+    borderRadius: 4,
+    borderWidth: 1,
+    borderColor: "#f8f9fa",
+    fontSize: 800,
+  }
 
 
 });
